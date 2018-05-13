@@ -4,7 +4,7 @@
 
 # Server_Task_Manager
 
-> Link to the server application: 
+> Link to the server application: https://github.com/PKravchenko-ki16/FUL_REST_API_JSON_Server_ASP.NET_Core
 
 ## Build Setup
 
