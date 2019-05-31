@@ -18,7 +18,7 @@
   </div>
 </template>
 <script>
-import {worktocookie} from 'G:/Учёба/Экзамен-View/SPA-Client_Vue_TaskManager/src/components/mixins/worktocookie.js';
+import {worktocookie} from '/Users/Павел/source/repos/SPA_Client_Vue_TaskManager/src/components/mixins/worktocookie';
 
 export default {
      name: 'App',

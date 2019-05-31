@@ -1,14 +1,13 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import {worktocookie} from 'G:/Учёба/Экзамен-View/SPA-Client_Vue_TaskManager/src/components/mixins/worktocookie.js';
-import {postrefresh} from 'G:/Учёба/Экзамен-View/SPA-Client_Vue_TaskManager/src/components/mixins/postrefresh.js';
+import {worktocookie} from 'C:/Users/Павел/source/repos/SPA_Client_Vue_TaskManager/src/components/mixins/worktocookie.js';
+import {postrefresh} from 'C:/Users/Павел/source/repos/SPA_Client_Vue_TaskManager/src/components/mixins/postrefresh.js';
 import apphome from '@/pages/home/home_index';
 import apparhive from '@/pages/arhive/arhive_index';
 import applogin from '@/pages/login/login_index';
 import appproject from '@/pages/project/project_index';
 import appregistration from '@/pages/registration/registration_index';
 import todoist from '@/pages/todoist/todoist';
-import { request } from 'http';
 
 Vue.use(Router)
 
