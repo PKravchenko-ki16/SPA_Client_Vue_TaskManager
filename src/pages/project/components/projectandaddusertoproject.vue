@@ -2,7 +2,7 @@
  <div>
          <h3 class="center">{{ Erojects.title }}</h3>
       <div class="card-content">
-            <p v-html="Erojects.description"></p>
+            <h5 v-html="Erojects.description"></h5>
           <br>
           <div v-if="seenaddprofile">
             <h5>Добавте пользователей к проекту:</h5>
@@ -21,8 +21,8 @@
  </div>
  </template>
  <script>
-import {inputfilter} from '@/components/mixins/inputfilter.js'
- import {worktocookie} from '@/components/mixins/worktocookie.js';
+import {inputfilter} from '@/components/mixins/inputfilter.js';
+import {worktocookie} from '@/components/mixins/worktocookie.js';
 
  export default {
    name: '',

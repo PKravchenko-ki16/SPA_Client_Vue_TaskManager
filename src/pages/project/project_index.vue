@@ -310,7 +310,7 @@ export default {
               {
                 const response = JSON.parse(xhr.responseText);
                 vm.Erojects=response;
-                if (response.arhive === "False")
+                if (response.arсhive === "False")
                 {
                     vm.seenifcompliteno = true;
                 }

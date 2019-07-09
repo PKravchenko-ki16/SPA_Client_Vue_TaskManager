@@ -34,10 +34,10 @@
  </div>
  </template>
  <script>
- import CreateProject from './createproject.vue'
- import {inputfilter} from '@/components/mixins/inputfilter.js'
- import {worktocookie} from '@/components/mixins/worktocookie.js';
- import { VueEditor } from 'vue2-editor'
+ import CreateProject from './createproject.vue';
+ import {inputfilter} from '@/components/mixins/inputfilter.js';
+ import {worktocookie} from '/Users/Павел/source/repos/SPA_Client_Vue_TaskManager/src/components/mixins/worktocookie';
+ import { VueEditor } from 'vue2-editor';
  
  export default {
    name: 'viewownproject',

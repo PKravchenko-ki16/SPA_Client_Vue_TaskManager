@@ -51,7 +51,7 @@
  </div>
  </template>
  <script>
-import {inputfilter} from '@/components/mixins/inputfilter.js'
+import {inputfilter} from '@/components/mixins/inputfilter.js';
 import {worktocookie} from '@/components/mixins/worktocookie.js';
 import Datepicker from 'vuejs-datepicker';
 
@@ -59,7 +59,7 @@ import Datepicker from 'vuejs-datepicker';
    name: '',
    mixins: [inputfilter] [worktocookie],
   props: {
-    idproject: String,
+    idproject: Number,
   },
   data() {
     return {
@@ -81,7 +81,7 @@ import Datepicker from 'vuejs-datepicker';
       },
       returnaddtask()
       {
-        idproject: this.$route.params.id,
+        this.idproject= this.$route.params.id,
         this.titlenewtask= "";
         this.datepick= new Date();
         this.picked = "Middle";

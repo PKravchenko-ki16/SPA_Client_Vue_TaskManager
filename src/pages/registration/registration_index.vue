@@ -9,21 +9,21 @@
                   <div class="row">
                     <div class="input-field col s6">
                       <span>Name</span>
-                      <input autofocus type="text" class="autocomplete" v-model="Name">
+                      <input autofocus type="text" v-model="Name">
                     </div>
                     <div class="input-field col s6">
                        <span>Login</span>
-                      <input type="text"  v-model="Login">
+                      <input type="text" class="autocomplete"  v-model="Login">
                     </div>
                   </div>
                     <div class="row">
                     <div class="input-field col s5">
                       <span>Password</span>
-                      <input type="text" class="autocomplete" v-model="Password">
+                      <input type="password" class="autocomplete" v-model="Password">
                     </div>
                     <div class="input-field col s5">
                        <span>Confirm Password</span>
-                      <input  type="password" v-model="ConfirmPassword">
+                      <input  type="password" class="autocomplete" v-model="ConfirmPassword">
                     </div>
                     <div class="input-field col s2">
                       <br>

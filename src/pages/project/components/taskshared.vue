@@ -34,7 +34,7 @@
                       <a  v-if="notseeneditbutton" v-on:click="nviewtaskshared()" class="acenter btn-floating Small waves-effect waves-light grey"><i class="material-icons">dehaze</i></a>
                   </div>
                 </div>
-                <ol v-if="seen===true,it === Etask.id" class="oimain">
+                <ol v-if="seen===true && it === Etask.id" class="oimain">
                  <TaskShared :taskid="Etask.id" :seenfalse="false"></TaskShared>
                </ol>
                <ol v-else-if="seen === false">
@@ -42,7 +42,7 @@
            </div>
         </div>
    </div>
-           <div v-for="(Etask) in Etasks" :key="Etask.id" v-if="seenbutton,seenfalse" class="card-action">
+           <div v-for="(Etask) in Etasks" :key="Etask.id" v-if="seenbutton && seenfalse" class="card-action">
              <div class="card ">
                 <div  v-bind:class="{green: Etask.complite === 'yes'}" class="card-content">
                 <div class="row">
@@ -71,9 +71,9 @@
                     <a href="#" v-if="seencreatetasktotask" v-on:click="createtasktotask(Etask.id)">Создать подзадачу</a>
                     <a href="#" v-if="seeneditbuttask" v-on:click="restedittask(Etask)">Редактировать</a>
                     <a href="#" v-if="seeremove" v-on:click="seenremove(Etask.id)">Удалить</a>
-                    <a href="#" v-if="seengoremove === true,ids === Etask.id" v-on:click="beckremove()">Отменить</a>
-                    <a href="#" v-if="seengoremove === true,ids === Etask.id" v-on:click="delitetask(Etask.id)" >Подтвердить</a>
-                    <div v-if="seenotcomplite, idcomplite === Etask.id">
+                    <a href="#" v-if="seengoremove === true && ids === Etask.id" v-on:click="beckremove()">Отменить</a>
+                    <a href="#" v-if="seengoremove === true && ids === Etask.id" v-on:click="delitetask(Etask.id)" >Подтвердить</a>
+                    <div v-if="seenotcomplite && idcomplite === Etask.id">
                      <h6>Ещё не все подзадачи выполнены...</h6> 
                     </div>
                   </div>
@@ -83,7 +83,7 @@
                   </div>
                 </div>
 
-                <div v-if="seenaddtasktotask,ittt === Etask.id" class="card ">
+                <div v-if="seenaddtasktotask && ittt === Etask.id" class="card ">
                 <div class="card-content">
                 <div class="row">
                   <div class="col s12 m12 l12">
@@ -129,7 +129,7 @@
                   </div>
                 </div>
 
-               <div v-if="seenedittask,itt === Etask.id" class="card ">
+               <div v-if="seenedittask && itt === Etask.id" class="card ">
                 <div class="card-content">
                 <div class="row">
                   <div class="col s12 m12 l12">
@@ -175,7 +175,7 @@
                   </div>
                 </div>
 
-               <ol v-if="seen===true,it === Etask.id" class="oimain">
+               <ol v-if="seen===true && it === Etask.id" class="oimain">
                  <TaskShared :taskid="Etask.id" :seenfalse="true"></TaskShared>
                </ol>
                <ol v-else-if="seen === false">
@@ -184,7 +184,7 @@
  </li>
  </template>
  <script>
-import {inputfilter} from '@/components/mixins/inputfilter.js'
+import {inputfilter} from '@/components/mixins/inputfilter.js';
 import {worktocookie} from '@/components/mixins/worktocookie.js';
 import Datepicker from 'vuejs-datepicker';
 
