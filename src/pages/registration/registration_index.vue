@@ -40,7 +40,7 @@
   </div>
 </template>
 <script>
-import {inputfilter} from '@/components/mixins/inputfilter.js'
+import {inputfilter} from '../../components/mixins/inputfilter.js'
 import router from '@/router/index.js'
 
 export default {

@@ -113,7 +113,7 @@ import {worktocookie} from '@/components/mixins/worktocookie.js';
           '&resource_types=["projects"]';
 
           const xhr = new XMLHttpRequest();
-          xhr.open('POST', `https://todoist.com/api/v7/sync`, true);
+          xhr.open('POST', `https://todoist.com/api/v8/sync`, true);
           xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
           xhr.onload  = responceLoad;
           var vm = this;
@@ -138,7 +138,7 @@ import {worktocookie} from '@/components/mixins/worktocookie.js';
           '&resource_types=["items"]';
 
           const xhr = new XMLHttpRequest();
-          xhr.open('POST', `https://todoist.com/api/v7/sync`, true);
+          xhr.open('POST', `https://todoist.com/api/v8/sync`, true);
           xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
           xhr.onload  = responceLoad;
           var vm = this;

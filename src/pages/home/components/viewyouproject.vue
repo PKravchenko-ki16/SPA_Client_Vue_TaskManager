@@ -14,7 +14,7 @@
  </div>
  </template>
  <script>
-import {worktocookie} from '@/components/mixins/worktocookie.js';
+import {worktocookie} from '../../../components/mixins/worktocookie';
 
  export default {
     mixins: 

@@ -17,7 +17,7 @@
         </div>
       </div>
 
-     <div v-if="seen === true,it === Eroject.id" class="card">
+     <div v-if="seen === true, it === Eroject.id" class="card">
       <div class="card-content">
         <span class="card-title"><a href="#" >Project Name</a></span>
           <span class="card-title"><input autofocus v-model="Eroject.title"></span>
@@ -36,7 +36,7 @@
  <script>
  import CreateProject from './createproject.vue';
  import {inputfilter} from '@/components/mixins/inputfilter.js';
- import {worktocookie} from '/Users/Павел/source/repos/SPA_Client_Vue_TaskManager/src/components/mixins/worktocookie';
+ import {worktocookie} from '@/components/mixins/worktocookie';
  import { VueEditor } from 'vue2-editor';
  
  export default {

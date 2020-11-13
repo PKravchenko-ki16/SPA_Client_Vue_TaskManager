@@ -1,5 +1,6 @@
-import {worktocookie} from 'C:/Users/Павел/source/repos/SPA_Client_Vue_TaskManager/src/components/mixins/worktocookie.js';
-import router from 'C:/Users/Павел/source/repos/SPA_Client_Vue_TaskManager/src/router/index.js'
+import {worktocookie} from '../mixins/worktocookie.js';
+import router from '../../router/index.js'
+
 
 export const postrefresh = {
     mixins: [worktocookie],

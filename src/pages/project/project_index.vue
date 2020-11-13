@@ -217,8 +217,8 @@
 import TaskShared from './components/taskshared.vue';
 import Createtasktoproject from './components/createtasktoproject.vue';
 import ProjectAndAddUserToProject from './components/projectandaddusertoproject.vue';
-import {inputfilter} from '@/components/mixins/inputfilter.js';
-import {worktocookie} from '@/components/mixins/worktocookie.js';
+import {inputfilter} from '../../components/mixins/inputfilter.js';
+import {worktocookie} from '../../components/mixins/worktocookie.js';
 import Datepicker from 'vuejs-datepicker';
 
 export default {

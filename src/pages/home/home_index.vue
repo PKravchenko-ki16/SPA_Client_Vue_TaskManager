@@ -13,7 +13,8 @@
 <script>
 import ViewYouProject from './components/viewyouproject.vue';
 import ViewOwnProject from './components/viewownproject.vue';
-import {worktocookie} from '@/components/mixins/worktocookie.js';
+import {worktocookie} from '../../components/mixins/worktocookie.js';
+
 
   export default {
      name: 'App',
